@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Button Creator</title>
+  </head>
+  <body>
+    <section class="button-creator">
+      <form action="#" id="controls" name="controls">
+        <label for="text">Text</label>
+        <input type="text" name="text" id="text" />
+
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" />
+
+        <label for="backgroundColor">background-color</label>
+        <input type="color" name="backgroundColor" id="backgroundColor" />
+
+        <label for="height">Height</label>
+        <input type="range" name="height" id="height" min="5" max="200" />
+
+        <label for="height">Width</label>
+        <input type="range" name="width" id="width" min="15" max="600" />
+
+        <label for="color">Border</label>
+        <input type="text" name="border" id="border" />
+
+        <label for="borderRadius">Border Radius</label>
+        <input
+          type="range"
+          name="borderRadius"
+          id="borderRadius"
+          min="0"
+          max="20"
+        />
+
+        <select name="fontFamily" id="fontFamily">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="monospace">Monospace</option>
+        </select>
+
+        <label for="fontSize">Font-size (rem)</label>
+        <input type="number" name="fontSize" id="fontSize" />
+      </form>
+
+      <section class="result">
+        <button class="btn">Clique</button>
+        <pre><code class="css"></code></pre>
+      </section>
+    </section>
+  </body>
+</html>
